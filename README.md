@@ -26,7 +26,7 @@ E o arquivo será salvo no mesmo diretório do programa.
 - -gf or --getfile : Optional[bool]
   - Salve o caminho dos arquivos em um arquivo. []
         
-## Parameters Argparse Mutually Exclusive Group
+## Parameters Argparse - Mutually Exclusive Group
 
 - -rm or --rmatch : Optional[bool]
   - Verifica uma correspondência apenas no início da string.
