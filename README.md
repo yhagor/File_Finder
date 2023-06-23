@@ -14,3 +14,23 @@ Os arquivos encontrados serão exibidos com seu caminho completo, tamanho em byt
 Para visualizar as informações dos arquivos de forma mais organizada, você também pode solicitar que o programa crie um arquivo .tsv contendo essas informações. Os dados serão apresentados em uma tabela simples.
 
 E o arquivo será salvo no mesmo diretório do programa.
+
+## Parameters Argparse
+
+- -v or --version : Optional[bool]
+  - Versão do programa.
+- -rd or --rootdir : str
+  - Diretório raiz onde será realizada a busca dos arquivos.
+- -wn or --wantedname : str
+  - Nome, parte do nome do arquivo ou extensão do arquivo. []
+- -gf or --getfile : Optional[bool]
+  - Salve o caminho dos arquivos em um arquivo. []
+        
+## Parameters Argparse Mutually Exclusive Group
+
+- -rm or --rmatch : Optional[bool]
+  - Verifica uma correspondência apenas no início da string.
+- -rs or --rsearch : Optional[bool]
+  - Verifica uma correspondência em qualquer lugar na string.
+- -en or --endswith : Optional[bool]
+  - verifique a extensão do arquivo.
