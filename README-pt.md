@@ -3,17 +3,13 @@ Select Language : [:us:](https://github.com/yhagor/File_Finder/blob/main/README.
   <p align="center">Localizador de Arquivos</p>
 </h1>
 
-Este script foi desenvolvido com o objetivo de auxiliar na busca de arquivos, permitindo a busca por nome ou parte do nome.
+O Localizador de Arquivos é um script versátil projetado para auxiliar na busca de arquivos. Ele permite aos usuários procurar por arquivos com base em vários critérios, como nome, parte do nome ou extensão do arquivo.
+
+Os usuários podem especificar padrões de busca, incluindo a capacidade de procurar arquivos que comecem com uma palavra específica ou contenham uma sequência de caracteres específica em qualquer lugar de seu nome. O programa fornece informações detalhadas sobre os arquivos encontrados, incluindo o caminho completo, tamanho em bytes e data da última modificação. Além disso, os usuários têm a opção de gerar um arquivo .tsv para uma apresentação mais organizada das informações dos arquivos, o arquivo será salvo no mesmo diretório do programa. No entanto, é importante lembrar de renomear o arquivo solicitado anteriormente para evitar a sobrescrição indesejada.
+
+O programa capacita os usuários a localizar eficientemente arquivos em um diretório específico ou em todo o sistema, permitindo otimizar seus processos de gerenciamento e recuperação de arquivos.
 
 Se você estiver procurando por um arquivo que contenha espaços entre as palavras, o nome deve ser colocado entre aspas, por exemplo, "documentação do projeto".
-
-Além disso, é possível utilizar este programa para encontrar arquivos com uma extensão específica. Basta inserir o parâmetro "-wn .pdf" para buscar arquivos com extensão PDF, por exemplo, e utilizar o parâmetro "-ew" para especificar a extensão.
-
-Os arquivos encontrados serão exibidos com seu caminho completo, tamanho em bytes e data da última modificação.
-
-Para visualizar as informações dos arquivos de forma mais organizada, você também pode solicitar que o programa crie um arquivo .tsv contendo essas informações. Os dados serão apresentados em uma tabela simples.
-
-O arquivo será salvo no mesmo diretório do programa. No entanto, é importante lembrar de renomear o arquivo solicitado anteriormente para evitar a sobrescrição indesejada.
 
 ## Parameters Argparse
 
