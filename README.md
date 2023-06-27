@@ -3,17 +3,13 @@ Select Language : [:us:](https://github.com/yhagor/File_Finder/blob/main/README.
   <p align="center">File Finder</p>
 </h1>
 
-This script was developed with the aim of assisting in file searching, allowing you to search by name or part of the name.
+The File Finder is a versatile script designed to assist in file searching. It allows users to search for files based on various criteria, such as name, partial name, or file extension.
+
+Users can specify search patterns, including the ability to search for files that start with a specific word or contain a specific character sequence anywhere in their name. The program provides detailed information about the found files, including the full path, size in bytes, and last modification date. Additionally, users have the option to generate a .tsv file for a more organized presentation of the file information. The file will be saved in the same directory as the program. However, it is important to remember to rename the previously requested file to avoid unwanted overwriting.
+
+The program empowers users to efficiently locate files in a specific directory or throughout the system, allowing them to optimize their file management and retrieval processes.
 
 If you are looking for a file that contains spaces between the words, the name must be enclosed in quotation marks, for example, "project documentation".
-
-Additionally, you can use this program to find files with a specific extension. Simply insert the parameter "-wn .pdf" to search for files with a PDF extension, for example, and use the parameter "-ew" to specify the extension.
-
-The found files will be displayed with their full path, size in bytes, and date of last modification.
-
-To view the file information in a more organized manner, you can also request the program to create a .tsv file containing this information. The data will be presented in a simple table format.
-
-The file will be saved in the same directory as the program. However, it is important to remember to rename the previously requested file to avoid unwanted overwriting.
 
 ## Parameters Argparse
 
