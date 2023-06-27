@@ -1,6 +1,6 @@
 Select Language : [:us:](https://github.com/yhagor/File_Finder/blob/main/README.md) [:brazil:](https://github.com/yhagor/File_Finder/blob/main/README-pt.md)
 <h1 align="center">
-  <p align="center">:construction: File Finder :construction:</p>
+  <p align="center">File Finder</p>
 </h1>
 
 This script was developed with the aim of assisting in file searching, allowing you to search by name or part of the name.
