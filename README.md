@@ -1,55 +1,55 @@
 Select Language : [:us:]() [:brazil:]()
 <h1 align="center">
-  <p align="center">:construction: Localizador de Arquivos :construction:</p>
+  <p align="center">:construction: File Finder :construction:</p>
 </h1>
 
-Este script foi desenvolvido com o objetivo de auxiliar na busca de arquivos, permitindo a busca por nome ou parte do nome.
+This script was developed with the aim of assisting in file searching, allowing you to search by name or part of the name.
 
-Se você estiver procurando por um arquivo que contenha espaços entre as palavras, o nome deve ser colocado entre aspas, por exemplo, "documentação do projeto".
+If you are looking for a file that contains spaces between the words, the name must be enclosed in quotation marks, for example, "project documentation".
 
-Além disso, é possível utilizar este programa para encontrar arquivos com uma extensão específica. Basta inserir o parâmetro "-wn .pdf" para buscar arquivos com extensão PDF, por exemplo, e utilizar o parâmetro "-ew" para especificar a extensão.
+Additionally, you can use this program to find files with a specific extension. Simply insert the parameter "-wn .pdf" to search for files with a PDF extension, for example, and use the parameter "-ew" to specify the extension.
 
-Os arquivos encontrados serão exibidos com seu caminho completo, tamanho em bytes e data da última modificação.
+The found files will be displayed with their full path, size in bytes, and date of last modification.
 
-Para visualizar as informações dos arquivos de forma mais organizada, você também pode solicitar que o programa crie um arquivo .tsv contendo essas informações. Os dados serão apresentados em uma tabela simples.
+To view the file information in a more organized manner, you can also request the program to create a .tsv file containing this information. The data will be presented in a simple table format.
 
-O arquivo será salvo no mesmo diretório do programa. No entanto, é importante lembrar de renomear o arquivo solicitado anteriormente para evitar a sobrescrição indesejada.
+The file will be saved in the same directory as the program. However, it is important to remember to rename the previously requested file to avoid unwanted overwriting.
 
 ## Parameters Argparse
 
 - -v or --version : Optional[bool]
-  - Versão do programa.
+  - Program Version.
 - -rd or --rootdir : str
-  - Diretório raiz onde será realizada a busca dos arquivos.
+  - Root directory where the file search will be performed.
 - -wn or --wantedname : str
-  - Nome, parte do nome do arquivo ou extensão do arquivo.
+  - Name, part of the file name, or file extension.
 - -gf or --getfile : Optional[bool]
-  - Salve o caminho dos arquivos em um arquivo.
+  - Save the file paths to a file.
         
 ## Parameters Argparse - Mutually Exclusive Group
 
 - -rm or --rmatch : Optional[bool]
-  - Verifica uma correspondência apenas no início da string.
+  - Check for a match only at the beginning of the string.
 - -rs or --rsearch : Optional[bool]
-  - Verifica uma correspondência em qualquer lugar na string.
+  - Check for a match anywhere in the string.
 - -ew or --endswith : Optional[bool]
-  - verifique a extensão do arquivo.
+  - Check the file extension.
 
-## Usando o Programa
+## Using the Program.
 
-Os exemplos a seguir contêm o ```argumento opcional -gf```, que serve para gerar um arquivo .tsv com o intuito de demonstração.
+The following examples include the ```optional argument -gf```, which is used to generate a .tsv file for demonstration purposes.
 
 
-### Parametro ```-rm or --rmatch```
-Para realizar a busca dos arquivos que começão com a palavra class ou com qualquer outra palavra, você pode utilizar o seguinte recurso:
+### Parameter ```-rm or --rmatch```
+To perform the search for files that start with the word "class" or any other word, you can use the following feature:
 ```
 python3 file_finder.py -rd /home/gnome/Documentos/workspace -gf -rm -wn class
 ```
  ![](https://github.com/yhagor/File_Finder/blob/main/docs/start_of_string.gif)
  
-Ele permitirá encontrar arquivos cujos nomes comecem com qualquer palavra, tanto em letras maiúsculas quanto minúsculas.
+It will allow you to find files whose names start with any word, regardless of uppercase or lowercase letters.
 
-Exemplo do arquivo .tsv:
+File example .tsv:
 ```.tsv
 File Finder Ver 1.0.0 processing
 Root Directory : /home/gnome/Documentos/workspace
@@ -74,17 +74,16 @@ Full File Path                                                                Si
 /home/gnome/Documentos/workspace/repository/library/Class_xyz.py                 8486           2023.06.21 19:07:46
 ```
 
-
-### Parametro ```-rs or --rsearch```
-É possível realizar a busca em qualquer lugar do nome do arquivo, procurando por uma parte específica da palavra pesquisada.
+### Parameter ```-rs or --rsearch```
+It is possible to search anywhere in the file name, looking for a specific part of the searched word.
 ```
 python3 file_finder.py -rd /home/gnome/Documentos/workspace -gf -rs -wn main
 ```
  ![](https://github.com/yhagor/File_Finder/blob/main/docs/anywhere_in_the_string.gif)
  
- Isso permitirá encontrar arquivos que contenham a sequência de caracteres desejada em qualquer posição do seu nome.
+This will allow you to find files that contain the desired character sequence in any position of their name.
  
-Exemplo do arquivo .tsv:
+File example .tsv:
 ```.tsv
 File Finder Ver 1.0.0 processing
 Root Directory : /home/gnome/Documentos/workspace
@@ -103,17 +102,16 @@ Full File Path                                                                  
 /home/gnome/Documentos/workspace/repository/library/basic_main_window.ui              7524           2022.09.23 09:48:12
 ```
 
-
-### Parametro ```-ew or --endswith```
-Por último, mas não menos importante, é possível realizar a busca por arquivos com uma extensão específica.
+### Parameter ```-ew or --endswith```
+Last but not least, it is possible to search for files with a specific extension.
 ```
 python3 file_finder.py -rd /home/gnome/Documentos/workspace -gf -ew -wn .webm
 ```
  ![](https://github.com/yhagor/File_Finder/blob/main/docs/file_extension.gif)
 
-Isso permitirá filtrar os resultados para encontrar apenas os arquivos que correspondam à extensão desejada.
+This will allow you to filter the results to find only files that match the desired extension.
 
-Exemplo do arquivo .tsv:
+File example .tsv:
 ```.tsv
 File Finder Ver 1.0.0 processing
 Root Directory : /home/gnome/Documentos/workspace
