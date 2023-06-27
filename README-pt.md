@@ -1,6 +1,6 @@
 Select Language : [:us:](https://github.com/yhagor/File_Finder/blob/main/README.md) [:brazil:](https://github.com/yhagor/File_Finder/blob/main/README-pt.md)
 <h1 align="center">
-  <p align="center">:construction: Localizador de Arquivos :construction:</p>
+  <p align="center">Localizador de Arquivos</p>
 </h1>
 
 Este script foi desenvolvido com o objetivo de auxiliar na busca de arquivos, permitindo a busca por nome ou parte do nome.
